@@ -1,3 +1,4 @@
+#printing the board
 top = [" ", "1" , "2" , "3"]
 a = ['a','_','_','_']
 b = ['b','_','_','_']
@@ -5,7 +6,7 @@ c = ['c','_','_','_']
 lists = a + b + c
 
 
-    
+ #checking if user a won   
 def usr_A_check_win():
 
     i = 0
@@ -50,9 +51,10 @@ def usr_A_check_win():
         return False      
 
 
-    
+ #board printing    
 def board():
     print("",top ,'\n', a ,'\n', b ,'\n', c ,'\n')
+#ask user a for postion
 def usrA():
     work = True
     while work:
@@ -66,7 +68,7 @@ def usrA():
         else:
             work = True
 
-  
+#ask user b for postion  
 def usrB():
     work = True
     while work:
@@ -83,7 +85,7 @@ def usrB():
 
   
     
-    
+#program loop till winer    
 while True:
     
     board()
